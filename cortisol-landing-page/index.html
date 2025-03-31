@@ -86,19 +86,30 @@
     }
     .problem-icon {
       color: #ef4444;
-      font-size: 1.75rem; /* Aumentado de 1.5rem */
+      font-size: 1.75rem;
       margin-left: auto;
     }
     .solution-icon {
       color: #10b981;
-      font-size: 1.75rem; /* Aumentado de 1.5rem */
+      font-size: 1.75rem;
       margin-left: auto;
+    }
+    /* NOVAS CLASSES ADICIONADAS */
+    .wide-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .standalone-btn-container {
+      margin: 2rem auto;
+      max-width: 600px;
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   
-  <!-- Topo Verde (com margem reduzida) -->
+  <!-- Topo Verde -->
   <div class="bg-gradient-to-r from-green-600 to-green-500 py-4 px-4 text-center text-white font-bold text-base sm:text-lg shadow-md hover-arrow mb-0">
     🧠 <span class="underline">LIVE STRESS-FREE!</span> Discover the <span class="italic">3-minute daily method</span> that helped 9,200+ people lower cortisol
   </div>
@@ -126,9 +137,9 @@
     </div>
   </section>
 
-  <!-- 10 Problems Section (RED) -->
+  <!-- 10 Problems Section -->
   <section class="py-16 px-6 bg-white" id="problems">
-    <div class="max-w-5xl mx-auto">
+    <div class="wide-container">
       <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">10 Scientifically Proven Dangers of High Cortisol</h2>
       <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">(Peer-reviewed studies show these risks)</p>
       
@@ -236,9 +247,16 @@
     </div>
   </section>
 
-  <!-- 10 Solutions Section (GREEN) -->
+  <!-- Botão Adicional -->
+  <div class="wide-container">
+    <div class="standalone-btn-container">
+      <a href="#cta" class="cta-button text-white rounded-lg font-bold shadow-lg hover:shadow-xl transition duration-300 block text-center mb-4">LIVE STRESS-FREE! Download eBook - ONLY $4.99</a>
+    </div>
+  </div>
+
+  <!-- 10 Solutions Section -->
   <section class="py-16 px-6 bg-green-50" id="solutions">
-    <div class="max-w-5xl mx-auto">
+    <div class="wide-container">
       <h2 class="text-3xl font-bold text-center mb-4 text-green-700">10 Evidence-Based Solutions</h2>
       <p class="text-center text-green-600 mb-12 max-w-2xl mx-auto">(Proven in clinical trials)</p>
       
@@ -348,8 +366,8 @@
 
   <!-- CTA Section -->
   <section id="cta" class="py-20 px-6 bg-green-700 text-white">
-    <div class="max-w-3xl mx-auto">
-      <div class="guarantee-badge text-green-800 inline-block px-6 py-2 rounded-full mb-6 font-semibold text-center mx-auto">365-Day Money-Back Guarantee</div>
+    <div class="wide-container">
+      <div class="guarantee-badge text-green-800 inline-block px-6 py-2 rounded-full mb-6 font-semibold text-center mx-auto">30-Day Money-Back Guarantee</div>
       <h2 class="text-3xl font-bold mb-6 text-center">Ready for Scientifically Proven Results?</h2>
       <p class="text-xl mb-8 max-w-2xl mx-auto text-center">Get all 10 solutions with exact protocols, dosages, and 87 clinical references.</p>
       
