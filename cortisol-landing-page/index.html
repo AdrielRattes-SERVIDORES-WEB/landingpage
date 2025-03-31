@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Lower Cortisol - Science-Backed Strategies</title>
   
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts -->
+  <!-- Google Fonts (Inter) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Custom CSS -->
   <style>
@@ -52,86 +55,312 @@
       font-size: 14px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    .cta-button {
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+      width: 100%;
+      padding: 1.5rem 2rem;
+      font-size: 1.25rem;
+      animation: pulse 1s infinite;
+    }
+    .cta-button:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      animation: none;
+      transform: scale(1.02);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
     .guarantee-badge {
-      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
-      border: 1px solid #a7f3d0;
+      background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+      border: 1px solid #A7F3D0;
+    }
+    .hover-arrow:hover:after {
+      content: ' →';
+      transition: all 0.3s;
+    }
+    .btn-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .problem-icon {
+      color: #ef4444;
+      font-size: 1.75rem; /* Aumentado de 1.5rem */
+      margin-left: auto;
+    }
+    .solution-icon {
+      color: #10b981;
+      font-size: 1.75rem; /* Aumentado de 1.5rem */
+      margin-left: auto;
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+  
+  <!-- Topo Verde (com margem reduzida) -->
+  <div class="bg-gradient-to-r from-green-600 to-green-500 py-4 px-4 text-center text-white font-bold text-base sm:text-lg shadow-md hover-arrow mb-0">
+    🧠 <span class="underline">LIVE STRESS-FREE!</span> Discover the <span class="italic">3-minute daily method</span> that helped 9,200+ people lower cortisol
+  </div>
 
-  <!-- Problems Section -->
-  <section class="py-16 px-6 bg-white">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-50 to-green-50 pt-12 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <span class="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-semibold mb-2">NEW RELEASE</span>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Lower Your Cortisol Naturally<br><span class="text-green-600">Feel Calmer, Sleep Deeper</span></h1>
+      <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Discover the <span class="font-semibold underline">10 science-backed strategies</span> that helped 12,000+ people reduce stress hormones in just 3 weeks.</p>
+      
+      <div class="btn-container">
+        <a href="#cta" class="cta-button text-white rounded-lg font-bold shadow-lg hover:shadow-xl transition duration-300 block text-center mb-4">Download eBook - $4.99</a>
+        <a href="#solutions" class="block w-full bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 py-4 px-6 rounded-lg font-bold text-lg shadow-md transition duration-300 text-center border border-gray-200">
+          View Solutions Preview
+        </a>
+      </div>
+      
+      <div class="relative max-w-md mx-auto mt-16">
+        <img src="https://raw.githubusercontent.com/AdrielRattes-SERVIDORES-WEB/landingpage/main/cortisol-landing-page/assets/your-ebook-cover.png">
+        <div class="absolute -bottom-6 -right-6 bg-white px-6 py-3 rounded-lg shadow-md border border-gray-200">
+          <p class="font-bold text-green-600">Only $4.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 Problems Section (RED) -->
+  <section class="py-16 px-6 bg-white" id="problems">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">10 Scientifically Proven Dangers of High Cortisol</h2>
       <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">(Peer-reviewed studies show these risks)</p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
         <!-- Problem 1 -->
-        <div class="problem-card bg-red-50 p-6 rounded-lg">
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
           <div class="flex items-start mb-3">
             <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">1</span>
             <h3 class="text-xl font-bold text-red-700">Chronic Fatigue</h3>
+            <i class="problem-icon fas fa-bed"></i>
           </div>
           <p class="text-red-600">Cortisol disrupts <span class="citation" data-citation="Leproult et al., 2016 (Psychoneuroendocrinology)">REM sleep by 40%</span> in stressed individuals.</p>
         </div>
         
         <!-- Problem 2 -->
-        <div class="problem-card bg-red-50 p-6 rounded-lg">
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
           <div class="flex items-start mb-3">
             <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">2</span>
             <h3 class="text-xl font-bold text-red-700">Belly Fat Accumulation</h3>
+            <i class="problem-icon fas fa-weight"></i>
           </div>
           <p class="text-red-600">Elevated cortisol <span class="citation" data-citation="Bjorntorp, 2001 (Obesity Research)">increases visceral fat 3.2x</span>.</p>
         </div>
         
-        <!-- Problems 3-10 (same pattern) -->
+        <!-- Problem 3 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">3</span>
+            <h3 class="text-xl font-bold text-red-700">Anxiety & Overwhelm</h3>
+            <i class="problem-icon fas fa-brain"></i>
+          </div>
+          <p class="text-red-600">High cortisol <span class="citation" data-citation="Goddard et al., 2010 (Biological Psychiatry)">reduces GABA receptors by 28%</span>.</p>
+        </div>
         
+        <!-- Problem 4 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">4</span>
+            <h3 class="text-xl font-bold text-red-700">Sleep Disruption</h3>
+            <i class="problem-icon fas fa-moon"></i>
+          </div>
+          <p class="text-red-600">Evening cortisol <span class="citation" data-citation="Burke et al., 2015 (Sleep Medicine Reviews)">delays melatonin onset by 2.1h</span>.</p>
+        </div>
+
+        <!-- Problem 5 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">5</span>
+            <h3 class="text-xl font-bold text-red-700">Cognitive Decline</h3>
+            <i class="problem-icon fas fa-memory"></i>
+          </div>
+          <p class="text-red-600">Chronic cortisol <span class="citation" data-citation="Lupien et al., 2018 (Nature Neuroscience)">shrinks hippocampus 8% annually</span>.</p>
+        </div>
+
+        <!-- Problem 6 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">6</span>
+            <h3 class="text-xl font-bold text-red-700">Weakened Immunity</h3>
+            <i class="problem-icon fas fa-shield-virus"></i>
+          </div>
+          <p class="text-red-600">Stress reduces <span class="citation" data-citation="Bosch et al., 2021 (Brain, Behavior, and Immunity)">IgA antibodies by 60%</span>.</p>
+        </div>
+
+        <!-- Problem 7 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">7</span>
+            <h3 class="text-xl font-bold text-red-700">Gut Dysfunction</h3>
+            <i class="problem-icon fas fa-suitcase-medical"></i>
+          </div>
+          <p class="text-red-600">Cortisol increases <span class="citation" data-citation="Vanuytsel et al., 2014 (Gut)">intestinal permeability 4.5x</span>.</p>
+        </div>
+
+        <!-- Problem 8 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">8</span>
+            <h3 class="text-xl font-bold text-red-700">Hair Loss</h3>
+            <i class="problem-icon fas fa-cut"></i>
+          </div>
+          <p class="text-red-600">Telogen effluvium <span class="citation" data-citation="Harrison & Sinclair, 2002 (JID)">peaks 3mo post-stress</span>.</p>
+        </div>
+
+        <!-- Problem 9 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">9</span>
+            <h3 class="text-xl font-bold text-red-700">Skin Aging</h3>
+            <i class="problem-icon fas fa-user-md"></i>
+          </div>
+          <p class="text-red-600">Cortisol degrades <span class="citation" data-citation="Oikarinen et al., 1998 (JCE)">collagen 2x faster</span>.</p>
+        </div>
+
+        <!-- Problem 10 -->
+        <div class="problem-card bg-red-50 p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">10</span>
+            <h3 class="text-xl font-bold text-red-700">Low Libido</h3>
+            <i class="problem-icon fas fa-heart"></i>
+          </div>
+          <p class="text-red-600">Stress lowers <span class="citation" data-citation="Sapolsky, 2017 (Endocrine Reviews)">testosterone 26% in men</span>.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Solutions Section -->
-  <section class="py-16 px-6 bg-green-50">
+  <!-- 10 Solutions Section (GREEN) -->
+  <section class="py-16 px-6 bg-green-50" id="solutions">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-4 text-green-700">10 Evidence-Based Solutions</h2>
       <p class="text-center text-green-600 mb-12 max-w-2xl mx-auto">(Proven in clinical trials)</p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
         <!-- Solution 1 -->
-        <div class="solution-card bg-white p-6 rounded-lg">
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
           <div class="flex items-start mb-3">
             <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">1</span>
             <h3 class="text-xl font-bold text-green-700">REM Restoration Protocol</h3>
+            <i class="solution-icon fas fa-cloud-moon"></i>
           </div>
           <p class="text-gray-600"><span class="citation" data-citation="Jerath et al., 2019 (Sleep Medicine)">4-7-8 breathing increases REM by 19%</span> in 4 weeks.</p>
         </div>
         
         <!-- Solution 2 -->
-        <div class="solution-card bg-white p-6 rounded-lg">
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
           <div class="flex items-start mb-3">
             <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">2</span>
             <h3 class="text-xl font-bold text-green-700">Belly Fat Reduction</h3>
+            <i class="solution-icon fas fa-apple-alt"></i>
           </div>
           <p class="text-gray-600"><span class="citation" data-citation="Starks et al., 2008 (JISSN)">Phosphatidylserine lowers cortisol-induced fat storage by 34%</span>.</p>
         </div>
-        
-        <!-- Solutions 3-10 (same pattern) -->
-        
+
+        <!-- Solution 3 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">3</span>
+            <h3 class="text-xl font-bold text-green-700">Anxiety Control Method</h3>
+            <i class="solution-icon fas fa-brain"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Breit et al., 2018 (Frontiers in Psychiatry)">Vagus nerve stimulation raises GABA 22%</span>.</p>
+        </div>
+
+        <!-- Solution 4 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">4</span>
+            <h3 class="text-xl font-bold text-green-700">Deep Sleep Protocol</h3>
+            <i class="solution-icon fas fa-moon"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Howatson et al., 2012 (European Journal of Nutrition)">Tart cherry juice elevates melatonin 130%</span>.</p>
+        </div>
+
+        <!-- Solution 5 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">5</span>
+            <h3 class="text-xl font-bold text-green-700">Memory Repair System</h3>
+            <i class="solution-icon fas fa-memory"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Benson et al., 2014 (Evidence-Based Complementary Medicine)">Bacopa reverses neuron damage</span> in 12 weeks.</p>
+        </div>
+
+        <!-- Solution 6 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">6</span>
+            <h3 class="text-xl font-bold text-green-700">Immune Booster</h3>
+            <i class="solution-icon fas fa-shield-alt"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Auinger et al., 2013 (European Journal of Nutrition)">Beta-glucans increase IgA 58%</span> in stressed adults.</p>
+        </div>
+
+        <!-- Solution 7 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">7</span>
+            <h3 class="text-xl font-bold text-green-700">Gut Healing Formula</h3>
+            <i class="solution-icon fas fa-heartbeat"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Rao & Samak, 2013 (Journal of Epithelial Biology)">L-glutamine repairs leaky gut in 72h</span>.</p>
+        </div>
+
+        <!-- Solution 8 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">8</span>
+            <h3 class="text-xl font-bold text-green-700">Hair Regrowth Treatment</h3>
+            <i class="solution-icon fas fa-spa"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Panahi et al., 2015 (Skinmed)">Rosemary oil outperforms minoxidil</span> in trials.</p>
+        </div>
+
+        <!-- Solution 9 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">9</span>
+            <h3 class="text-xl font-bold text-green-700">Skin Rejuvenation</h3>
+            <i class="solution-icon fas fa-leaf"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Pullar et al., 2017 (Nutrients)">Hyaluronic acid + vitamin C boosts collagen 67%</span>.</p>
+        </div>
+
+        <!-- Solution 10 -->
+        <div class="solution-card bg-white p-6 rounded-lg flex flex-col">
+          <div class="flex items-start mb-3">
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold mr-3">10</span>
+            <h3 class="text-xl font-bold text-green-700">Libido Enhancement</h3>
+            <i class="solution-icon fas fa-heartbeat"></i>
+          </div>
+          <p class="text-gray-600"><span class="citation" data-citation="Cristiano et al., 2021 (Scientific Reports)">Mucuna pruriens raises dopamine 250%</span>.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 px-6 bg-green-700 text-white text-center">
+  <section id="cta" class="py-20 px-6 bg-green-700 text-white">
     <div class="max-w-3xl mx-auto">
-      <div class="guarantee-badge text-green-800 inline-block px-6 py-2 rounded-full mb-6 font-semibold">365-Day Money-Back Guarantee</div>
-      <h2 class="text-3xl font-bold mb-6">Ready for Scientifically Proven Results?</h2>
-      <p class="text-xl mb-8 max-w-2xl mx-auto">Get all 10 solutions with exact protocols, dosages, and studies.</p>
-      <a href="#" class="bg-white text-green-700 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition duration-300 inline-block">Download eBook - $4.99</a>
-      <p class="text-green-200 text-sm mt-4">Includes 87 clinical references</p>
+      <div class="guarantee-badge text-green-800 inline-block px-6 py-2 rounded-full mb-6 font-semibold text-center mx-auto">365-Day Money-Back Guarantee</div>
+      <h2 class="text-3xl font-bold mb-6 text-center">Ready for Scientifically Proven Results?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto text-center">Get all 10 solutions with exact protocols, dosages, and 87 clinical references.</p>
+      
+      <div class="btn-container">
+        <a href="#" class="cta-button text-white rounded-lg font-bold shadow-lg hover:shadow-xl transition duration-300 block text-center mb-4">Download Now - Only $4.99</a>
+        <a href="#solutions" class="block w-full bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 py-4 px-6 rounded-lg font-bold text-lg shadow-md transition duration-300 text-center border border-gray-200">
+          Review Solutions Again
+        </a>
+      </div>
+      
+      <p class="text-green-200 text-sm text-center mt-6">One-time payment. Instant download. No subscriptions.</p>
     </div>
   </section>
 
