@@ -1,41 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How to Lower Cortisol - eBook</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Lower Cortisol - Science-Backed Strategies</title>
+  
+  <!-- Tailwind CSS via CDN (CSS externo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS (embutido no <head>) -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .problem-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .problem-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    .cta-button {
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    }
+    .cta-button:hover {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    }
+    .guarantee-badge {
+      background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+      border: 1px solid #A7F3D0;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto p-6">
-    <header class="text-center mb-8">
-      <h1 class="text-4xl font-bold text-green-600">How to Lower Cortisol</h1>
-      <p class="text-xl mt-4">A life-changing eBook for stressed moms – Only $4.99!</p>
-    </header>
-    <div class="flex flex-col md:flex-row items-center gap-6">
-      <img src="assets/your-ebook-cover.png" alt="eBook cover" class="w-64 rounded shadow-lg">
-      <div>
-        <h2 class="text-2xl font-semibold text-green-700 mb-4">Benefits of Lowering Cortisol:</h2>
-        <ul class="list-disc list-inside text-lg space-y-2">
-          <li>Improved mood and emotional balance</li>
-          <li>Better sleep and energy</li>
-          <li>Reduced belly fat and inflammation</li>
-          <li>More patience with your kids</li>
-        </ul>
-        <a href="#" class="mt-6 inline-block bg-green-500 text-white text-xl font-bold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transition">Only $4.99 - Download Now</a>
+<body class="bg-gray-50 text-gray-800">
+  
+  <!-- ===== Hero Section ===== -->
+  <section class="bg-gradient-to-br from-blue-50 to-green-50 py-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <span class="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-semibold mb-4">NEW RELEASE</span>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Lower Your Cortisol Naturally<br><span class="text-green-600">Feel Calmer, Sleep Deeper</span></h1>
+      <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Discover the <span class="font-semibold underline">10 science-backed strategies</span> that helped 12,000+ people reduce stress hormones in just 3 weeks.</p>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <a href="#cta" class="cta-button text-white px-10 py-5 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition duration-300">Download eBook - $4.99</a>
+      </div>
+      
+      <div class="relative max-w-md mx-auto">
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Woman meditating" class="rounded-xl shadow-2xl border-8 border-white">
+        <div class="absolute -bottom-6 -right-6 bg-white px-6 py-3 rounded-lg shadow-md border border-gray-200">
+          <p class="font-bold text-green-600">Only $4.99</p>
+        </div>
       </div>
     </div>
-    <section class="mt-12">
-      <h3 class="text-2xl font-bold mb-4 text-center text-gray-700">What Moms Are Saying:</h3>
-      <div class="grid gap-6 md:grid-cols-2">
-        <blockquote class="bg-green-50 p-4 rounded shadow text-gray-700">
-          “This book helped me feel more like myself again. I finally sleep better!”<br><span class="block mt-2 font-semibold text-green-700">— Amanda L.</span>
-        </blockquote>
-        <blockquote class="bg-green-50 p-4 rounded shadow text-gray-700">
-          “A must-read for any busy mom! Clear, practical and effective.”<br><span class="block mt-2 font-semibold text-green-700">— Sarah M.</span>
-        </blockquote>
+  </section>
+
+  <!-- ===== 10 Problems Section ===== -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">10 Ways High Cortisol Is Sabotaging You</h2>
+      <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">(You'll learn how to fix each of these in the eBook)</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Problem 1 -->
+        <div class="problem-card bg-white p-8 rounded-xl border border-gray-200 hover:border-green-200 cursor-pointer">
+          <div class="flex items-start mb-4">
+            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-bold mr-4">1</span>
+            <h3 class="text-xl font-bold text-gray-900">Chronic Fatigue</h3>
+          </div>
+          <p class="text-gray-600">Wake up exhausted even after 8+ hours of sleep? Cortisol disrupts your REM cycles.</p>
+        </div>
+        
+        <!-- Problem 2 -->
+        <div class="problem-card bg-white p-8 rounded-xl border border-gray-200 hover:border-green-200 cursor-pointer">
+          <div class="flex items-start mb-4">
+            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-bold mr-4">2</span>
+            <h3 class="text-xl font-bold text-gray-900">Stubborn Weight Gain</h3>
+          </div>
+          <p class="text-gray-600">Especially belly fat. Cortisol tells your body to store fat for "survival mode".</p>
+        </div>
+        
+        <!-- Add problems 3-10 following the same structure -->
+        <!-- Problem 3 -->
+        <div class="problem-card bg-white p-8 rounded-xl border border-gray-200 hover:border-green-200 cursor-pointer">
+          <div class="flex items-start mb-4">
+            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-bold mr-4">3</span>
+            <h3 class="text-xl font-bold text-gray-900">Anxiety & Overwhelm</h3>
+          </div>
+          <p class="text-gray-600">Constant racing thoughts? High cortisol keeps your nervous system on high alert.</p>
+        </div>
+        
+        <!-- Problem 4 -->
+        <div class="problem-card bg-white p-8 rounded-xl border border-gray-200 hover:border-green-200 cursor-pointer">
+          <div class="flex items-start mb-4">
+            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-bold mr-4">4</span>
+            <h3 class="text-xl font-bold text-gray-900">Poor Sleep Quality</h3>
+          </div>
+          <p class="text-gray-600">Trouble falling asleep or waking up at 3 AM? Cortisol disrupts melatonin production.</p>
+        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section id="cta" class="py-20 px-6 bg-green-700 text-white text-center">
+    <div class="max-w-3xl mx-auto">
+      <div class="guarantee-badge text-green-800 inline-block px-6 py-2 rounded-full mb-6 font-semibold">365-Day Money-Back Guarantee</div>
+      <h2 class="text-3xl font-bold mb-6">Ready to Lower Your Cortisol Naturally?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Get instant access to the eBook and start feeling calmer, sleeping deeper, and having more energy.</p>
+      <a href="#" class="cta-button text-white px-12 py-6 rounded-lg font-bold text-xl shadow-lg hover:shadow-xl transition duration-300 inline-block mb-6">Download Now - Only $4.99</a>
+      <p class="text-green-200 text-sm">One-time payment. Instant download. No subscriptions.</p>
+    </div>
+  </section>
+
 </body>
 </html>
