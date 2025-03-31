@@ -1,0 +1,10 @@
+{
+  "name": "cortisol-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for the eBook 'How to Lower Cortisol'",
+  "scripts": {
+    "start": "echo 'Static project - use Vercel to deploy'"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
